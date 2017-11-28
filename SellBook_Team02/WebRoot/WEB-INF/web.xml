@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>SellBook_Team02</display-name>
+  <filter>
+  	<filter-name>EncodingFilter</filter-name>
+	<filter-class>com.hzit.filter.EncodingFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>EncodingFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <servlet-name>AuthAdministratorLogin</servlet-name>
+    <servlet-class>com.hzit.servlet.administrator.AuthAdministratorLogin</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AuthCode</servlet-name>
+    <servlet-class>com.hzit.authcode.AuthCode</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CustomerRegisterServlet</servlet-name>
+    <servlet-class>com.hzit.servlet.customer.CustomerRegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CustomerRegisterAuthServlet</servlet-name>
+    <servlet-class>com.hzit.servlet.customer.CustomerRegisterAuthServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CustomerRegisterAuthCodeServlet</servlet-name>
+    <servlet-class>com.hzit.servlet.customer.CustomerRegisterAuthCodeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CustomerLoginServlet</servlet-name>
+    <servlet-class>com.hzit.servlet.customer.CustomerLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>BookListServlet</servlet-name>
+    <servlet-class>com.hzit.servlet.book.BookListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CustomerLogoutServlet</servlet-name>
+    <servlet-class>com.hzit.servlet.customer.CustomerLogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>BookDetailServlet</servlet-name>
+    <servlet-class>com.hzit.servlet.book.BookDetailServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CustomerInfoUpdateServlet</servlet-name>
+    <servlet-class>com.hzit.servlet.customer.CustomerInfoUpdateServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddSellOrderServlet</servlet-name>
+    <servlet-class>com.hzit.servlet.sellorder.AddSellOrderServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>QuerySellOrderServlet</servlet-name>
+    <servlet-class>com.hzit.servlet.sellorder.QuerySellOrderServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SellOrderDelServlet</servlet-name>
+    <servlet-class>com.hzit.servlet.sellorder.SellOrderDelServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ByBookServlet</servlet-name>
+    <servlet-class>com.hzit.servlet.sellorder.ByBookServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>QueryQuantityFromBookServlet</servlet-name>
+    <servlet-class>com.hzit.servlet.book.QueryQuantityFromBookServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AdminOrderListServlet</servlet-name>
+    <servlet-class>com.hzit.servlet.adminorder.AdminOrderListServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AdminLogoutServlet</servlet-name>
+    <servlet-class>com.hzit.servlet.administrator.AdminLogoutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DelAdminOrderServlet</servlet-name>
+    <servlet-class>com.hzit.servlet.adminorder.DelAdminOrderServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateAdminOrderServlet</servlet-name>
+    <servlet-class>com.hzit.servlet.adminorder.UpdateAdminOrderServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>AuthAdministratorLogin</servlet-name>
+    <url-pattern>/servlet/AuthAdministratorLogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AuthCode</servlet-name>
+    <url-pattern>/servlet/AuthCode</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CustomerRegisterServlet</servlet-name>
+    <url-pattern>/servlet/CustomerRegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CustomerRegisterAuthServlet</servlet-name>
+    <url-pattern>/servlet/CustomerRegisterAuthServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CustomerRegisterAuthCodeServlet</servlet-name>
+    <url-pattern>/servlet/CustomerRegisterAuthCodeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CustomerLoginServlet</servlet-name>
+    <url-pattern>/servlet/CustomerLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BookListServlet</servlet-name>
+    <url-pattern>/servlet/BookListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CustomerLogoutServlet</servlet-name>
+    <url-pattern>/servlet/CustomerLogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BookDetailServlet</servlet-name>
+    <url-pattern>/servlet/BookDetailServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CustomerInfoUpdateServlet</servlet-name>
+    <url-pattern>/servlet/CustomerInfoUpdateServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddSellOrderServlet</servlet-name>
+    <url-pattern>/servlet/AddSellOrderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QuerySellOrderServlet</servlet-name>
+    <url-pattern>/servlet/QuerySellOrderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SellOrderDelServlet</servlet-name>
+    <url-pattern>/servlet/SellOrderDelServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ByBookServlet</servlet-name>
+    <url-pattern>/servlet/ByBookServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QueryQuantityFromBookServlet</servlet-name>
+    <url-pattern>/servlet/QueryQuantityFromBookServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminOrderListServlet</servlet-name>
+    <url-pattern>/servlet/AdminOrderListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminLogoutServlet</servlet-name>
+    <url-pattern>/servlet/AdminLogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DelAdminOrderServlet</servlet-name>
+    <url-pattern>/servlet/DelAdminOrderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateAdminOrderServlet</servlet-name>
+    <url-pattern>/servlet/UpdateAdminOrderServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

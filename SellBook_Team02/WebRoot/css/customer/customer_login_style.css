@@ -1,0 +1,14 @@
+#myDiv{
+	border:2px solid gray;
+	width:400px;
+	position:relative;
+	top:150px;
+	left:440px;
+
+}
+#title{
+	border-bottom:2px solid gray;
+	background-color:gray;
+	padding:10px;
+	font:28px '华文行楷';
+}
